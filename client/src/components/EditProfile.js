@@ -27,7 +27,7 @@ function EditProfile() {
             lastNameInputRef.current.value =  storeObj.userReducer.loginDetails.lastName;
             ageInputRef.current.value =  storeObj.userReducer.loginDetails.age;
              emailInputRef.current.value =  storeObj.userReducer.loginDetails.email;
-            setImageURL(`http://localhost:8899/${storeObj.userReducer.loginDetails.profilePic}`);
+            setImageURL(`/${storeObj.userReducer.loginDetails.profilePic}`);
 
         },[])
 
@@ -46,7 +46,7 @@ function EditProfile() {
             method:"PATCH",
            body:dataToSend,
            };
-           let JSONdata = await fetch("http://localhost:8899/editProfile",reqOptions);
+           let JSONdata = await fetch("/editProfile",reqOptions);
            let JSOData = await JSONdata.json();
            alert(JSOData.msg);
            console.log(JSOData);

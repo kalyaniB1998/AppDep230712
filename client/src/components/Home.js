@@ -13,7 +13,7 @@ function Home() {
       <TopNavigation></TopNavigation>
         <h1>Home</h1>
         <h2>Hi,Welcome to {storeObj.userReducer.loginDetails.firstName}  {storeObj.userReducer.loginDetails.lastName}</h2>
-        <img className='img' src={`http://localhost:8899/${storeObj.userReducer.loginDetails.profilePic}`}></img>
+        <img className='img' src={`/${storeObj.userReducer.loginDetails.profilePic}`}></img>
       
       <div>
         <button onClick={()=>{

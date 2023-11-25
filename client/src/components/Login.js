@@ -38,7 +38,7 @@ function Login () {
   //       body:dataToSend,
   //     };
   
-  //     let JSONData = await fetch("http://localhost:8899/validateToken",reqOptions);
+  //     let JSONData = await fetch("/validateToken",reqOptions);
   //      let JSOData = await JSONData.json();
 
   //      if(JSOData.status==="failure"){
@@ -62,7 +62,7 @@ function Login () {
 //       body:dataToSend,
 //     };
 
-//     let JSONdata = await fetch("http://localhost:8899/validateLogin",reqOptions);
+//     let JSONdata = await fetch("/validateLogin",reqOptions);
 //     let JSOData = await JSONdata.json();
 //     if(JSOData.status==="failure"){
 //       alert(JSOData.msg);
@@ -87,7 +87,7 @@ function Login () {
       body:dataToSend,
     };
 
-    let JSONdata = await fetch("http://localhost:8899/validateLogin",reqOptions);
+    let JSONdata = await fetch("/validateLogin",reqOptions);
     let JSOData = await JSONdata.json();
     if(JSOData.status==="failure"){
       alert(JSOData.msg);
